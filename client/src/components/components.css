@@ -1,0 +1,46 @@
+/*VideoPlayer.css*/
+.video_container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.video_container .our_video {
+  width: 100%;
+  border: 2px inset white;
+}
+video {
+  width: 100%;
+}
+/*Options.css*/
+.user_video_container {
+  background-color: white;
+  padding: 32px;
+  width: 80%;
+}
+.video_options {
+  display: flex;
+  justify-content: space-evenly;
+}
+.video_options .video_id {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  color: white;
+  font-size: 25px;
+  background: radial-gradient(
+    95.56% 2173.67% at 3.23% 25.96%,
+    #293eff8e 0%,
+    #9000ff85 47.05%,
+    #34cfda8a
+  );
+}
+.video_options .video_id button {
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: #9000ff;
+  padding: 5px;
+  font-size: 18px;
+}

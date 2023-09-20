@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: white;
+  padding: 16px;
+}
+.main_contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header h1 {
+  background: radial-gradient(
+      95.56% 2173.67% at 3.23% 25.96%,
+      #293eff 0%,
+      #8f00ff 47.05%,
+      #34ceda
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

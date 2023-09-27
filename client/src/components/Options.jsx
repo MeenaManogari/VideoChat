@@ -19,27 +19,33 @@ const Options = ({ children }) => {
   return (
     <div className="user_video_container">
       <div className="user_area">
-        <form noValidate autoComplete="off">
+        <form
+          onSubmit={(e) => e.preventDefault()}
+          noValidate
+          autoComplete="off"
+        >
           <div className="video_options">
             <div className="video_id">
               <h6>Account Info</h6>
               <input
                 type="text"
-                label="name"
                 value={name}
-                onChange={(e) => setName(e.target.value)}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
               />
               <CopyToClipboard text={me}>
-                <button>copy your ID</button>
+                <button type="button">copy your ID</button>
               </CopyToClipboard>
             </div>
             <div className="video_id">
               <h6>Make a Call</h6>
               <input
                 type="text"
-                label="Id to call"
                 value={idToCall}
-                onChange={(e) => setIdToCall(e.target.value)}
+                onChange={(e) => {
+                  setIdToCall(e.target.value);
+                }}
               />
               {callAccepted && !callEnded ? (
                 <button onClick={leaveCall}>Hangup</button>
